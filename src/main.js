@@ -3,6 +3,7 @@ import javascriptLogo from './assets/javascript.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { setupCounter } from './counter.js'
+import './style.css'
 
 document.querySelector('#app').innerHTML = `
 <section id="center">
@@ -56,6 +57,10 @@ document.querySelector('#app').innerHTML = `
 
 <div class="ticks"></div>
 <section id="spacer"></sectçion>
+
+<h1 class="text-red-500 text-3xl">
+  Hallo Tailwind
+</h1>
 `
 
 setupCounter(document.querySelector('#counter'))
