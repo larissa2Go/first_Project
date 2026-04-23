@@ -1,31 +1,32 @@
 <!doctype html>
-<html lang="en" class= "dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekt 1</title>
   </head>
-  
-  <header class="bg-white shadow-md sticky top-0 z-50 dark:bg-black">
-      <h1>Menu Bar</h1>
-  </header>
-  <aside class="sidebar">
-      <nav aria-label="Hauptnavigation">
-          <ul>
-              <li><a href="#">Ausbilder</a></li>
-              <li><a href="#">Auzubis</a></li>
-              <li><a href="#">Berichtsheft</a></li>
-              <li><a href="#">Einstellungen</a></li>
-          </ul>
-      </nav>
-  </aside>
+  <body class="bg-white text-black dark:bg-black dark:text-white">
+      <header class="bg-white shadow-md sticky top-0 z-50 text-black dark:text-white dark:bg-black">
+        <h1>Menu Bar</h1>
+    </header>
+    <div class=" bg-blue-100 text-white px-4 py-2 rounded-md w-fit">
+      <button id="theme-toggle">Switch</button>
+    </div>
+    <aside class="sidebar">
+        <nav aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="#">Ausbilder</a></li>
+                <li><a href="#">Auzubis</a></li>
+                <li><a href="#">Berichtsheft</a></li>
+                <li><a href="#">Einstellungen</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-  <main>
-  <articel>Auf dieser Seite könnt ihr vieles über eure Aubildung lernen. Klickt euch doch gerne durch.</articel>
-  </main>
-  <body>
-    <div id="app"></div>
+    <main>
+    <article>Auf dieser Seite könnt ihr vieles über eure Aubildung lernen. Klickt euch doch gerne durch.</article>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

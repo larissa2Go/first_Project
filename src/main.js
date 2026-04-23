@@ -5,9 +5,10 @@ import heroImg from './assets/hero.png'
 import { setupCounter } from './counter.js'
 import './style.css'
 
-document.querySelector('#app').innerHTML = `
+const btn = document.querySelector('#theme-toggle')
+
+btn.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark')
+})
 
 
-`
-
-setupCounter(document.querySelector('#counter'))
