@@ -7,7 +7,7 @@
     <title>Projekt 1</title>
   </head>
   <body class="bg-white text-black dark:bg-black dark:text-white">
-      <header class="bg-gray-200 flex items-center shadow-md sticky top-0 z-50 text-black dark:text-white dark:bg-black">
+      <header class="bg-gray-300 flex items-center shadow-md sticky top-0 z-50 text-black dark:text-white dark:bg-zinc-950 ">
         <h1 class = "text-xl">Menu Bar</h1>
         <div class="bg-blue-100 text-white px-4 py-2 rounded-md w-fit ml-auto">
           <button class="w-10" id="theme-toggle">
@@ -15,17 +15,17 @@
           </button>
         </div>
       </header>
-    <aside class="flex flex-direction column px-4 bg-gray-100 p-4 hidden md:block hidden md:block">
-        <nav aria-label="Hauptnavigation">
-            <ul>
-                <li><a href="#">Ausbilder</a></li>
-                <li><a href="#">Auzubis</a></li>
-                <li><a href="#">Berichtsheft</a></li>
-                <li><a href="#">Einstellungen</a></li>
-            </ul>
-        </nav>
-    </aside>
-
+        <aside class="flex-col min-h-screen w-64 bg-gray-100 p-4 hidden md:block hidden md:block shadow-lg p-6 rounded-r-2xl dark:bg-zinc-950 ">
+            <nav aria-label="Hauptnavigation">
+                <ul class ="dark:bg-black px-3">
+                    <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg"><a href="#">Ausbilder</a></li>
+                    <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg"><a href="#">Auzubis</a></li>
+                    <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg"><a href="#">Berichtsheft</a></li>
+                    <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg border-r4"><a href="#">Einstellungen</a></li>
+                </ul>
+            </nav>
+        </aside>
+    
     <main>
     <article class = "flex justify-center">Auf dieser Seite könnt ihr vieles über eure Aubildung lernen. Klickt euch doch gerne durch.</article>
     </main>
