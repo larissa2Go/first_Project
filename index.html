@@ -15,34 +15,41 @@
           </button>
         </div>
       </header>
-        <aside class="flex-col min-h-screen w-64 bg-gray-100 p-4 hidden md:block hidden md:block shadow-lg p-6 rounded-r-2xl dark:bg-zinc-950 ">
-            <div class="p-6">
-                <h2 class="-mt-5 text-xl font-bold text-blue-600 dark:text-blue-400">Menü</h2>
-            </div>
-            <nav aria-label="Hauptnavigation">
-                <ul class ="dark:bg-black px-3">
-                    <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg shadow hover:bg-blue-50"><a href="#">Ausbilder</a></li>
-                    <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg shadow hover:bg-blue-50"><a href="#">Auzubis</a></li>
-                    <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg shadow hover:bg-blue-50"><a href="#">Berichtsheft</a></li>
-                    <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg shadow hover:bg-blue-50"><a href="#">Einstellungen</a></li>
+    <div class="flex felx-wrap">
+    <main>
+        <div class = "flex min-h-screen items-start justify-center">
+        <article>Auf dieser Seite könnt ihr vieles über eure Aubildung lernen. Klickt euch doch gerne durch.</article>
+        </div>
+        <div class="flex flex-col min-h-screen w-64 bg-gray-100 p-4 hidden md:block shadow-lg p-6 rounded-r-2xl dark:bg-zinc-950 ">
+              <aside>
+                  <div class="p-6">
+                      <h2 class="-mt-5 text-xl font-bold text-blue-600 dark:text-blue-400">Menü</h2>
+                  </div>
+                  <nav aria-label="Hauptnavigation">
+                      <ul class ="dark:bg-black px-3">
+                          <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg shadow hover:bg-blue-50"><a href="#">Ausbilder</a></li>
+                          <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg shadow hover:bg-blue-50"><a href="#">Auzubis</a></li>
+                          <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg shadow hover:bg-blue-50"><a href="#">Berichtsheft</a></li>
+                          <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-blue-200 rounded-lg shadow hover:bg-blue-50"><a href="#">Einstellungen</a></li>
+                      </ul>
+                  </nav>
+              </aside>
+          </div>
+    </main>
+    </div>
+        
+    <div class = "bg-gray-300 border-blue-500">
+        <footer role="contentinfo">
+            <nav aria-label="Footer-Navigation">
+                <ul>
+                    <li><a href="/impressum">Impressum</a></li>
+                    <li><a href="/datenschutz">Datenschutz</a></li>
+                    <li><a href="/barrierefreiheit">Erklärung zur Barrierefreiheit</a></li>
                 </ul>
             </nav>
-        </aside>
-    
-    <main>
-    <article class = "flex min-h-screen items-start">Auf dieser Seite könnt ihr vieles über eure Aubildung lernen. Klickt euch doch gerne durch.</article>
-    </main>
-    
-    <footer class = "bg-gray-300 border-blue-500"role="contentinfo">
-        <nav aria-label="Footer-Navigation">
-            <ul>
-                <li><a href="/impressum">Impressum</a></li>
-                <li><a href="/datenschutz">Datenschutz</a></li>
-                <li><a href="/barrierefreiheit">Erklärung zur Barrierefreiheit</a></li>
-            </ul>
-        </nav>
-        <p>2026 Firmenname. Alle Rechte vorbehalten.</p>
-    </footer>
+            <p>2026 Firmenname. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
