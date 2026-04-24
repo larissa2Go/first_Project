@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projekt 1</title>
-  </head>
-  <body class="bg-white text-black dark:bg-black dark:text-white">
-      <header class="bg-gray-300 flex items-center shadow-md sticky top-0 z-50 text-black dark:text-white dark:bg-zinc-950 ">
-        <h1 class = "text-xl">Menu Bar</h1>
-        <div class="bg-blue-100 text-white px-4 py-2 rounded-md w-fit ml-auto">
-          <button class="w-10" id="theme-toggle">
-            <img src="sun.png">
-          </button>
-        </div>
-      </header>
-      
-      <div class="flex min-h-screen">
-      
-    
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projekt 1</title>
+    </head>
+    <body class="bg-white text-black dark:bg-black dark:text-white">
+        <header class="bg-gray-300 flex items-center shadow-md sticky top-0 z-50 text-black dark:text-white dark:bg-zinc-950 ">
+            <h1 class = "text-xl">Header</h1>
+            <div class="bg-blue-100 text-white px-4 py-2 rounded-md w-fit ml-auto">
+                <button class="w-10" id="theme-toggle">
+                    <img src="sun.png">
+                </button>
+            </div>
+        </header>
+        
+        <div class="flex min-h-screen">
+            
+            
             <aside class="w-64 bg-gray-100 p-4 hidden md:block shadow-lg p-6 rounded-r-2xl dark:bg-zinc-950 ">
                 <div class="p-6">
                     <h2 class="-mt-5 text-xl font-bold text-blue-600 dark:text-blue-400">Menü</h2>
@@ -32,28 +32,34 @@
                     </ul>
                 </nav>
             </aside>
-
-    <main class ="flex-1 p-6">
-
-        <article>Auf dieser Seite könnt ihr vieles über eure Aubildung lernen. Klickt euch doch gerne durch.</article>
-
-    </main>
-    </div>
-
-    
+            
+            <main class ="flex-1 p-6">
+                <h1 class="text-2xl font-bold mb-2">
+                  Willkommen zurück 👋
+                </h1>
+                
+                <article class="">Diese Seite ist dafür gedacht, dass du alle Informationen auf einen Fleck hast. Auf dieser Seite könnt ihr vieles über eure Aubildung lernen sowie in Austausch mit euren Ausbilder treten und Ausbilder ebenfalls mit den Azubis. Berichtshefte können angelegt werden und vieles mehr. Klickt euch doch gerne durch.</article>
+                
+            </main>
+        </div>
         
-    <div class = "bg-gray-300 border-blue-500 dark:bg-zinc-950">
+        
+        
         <footer role="contentinfo">
-            <nav aria-label="Footer-Navigation">
-                <ul>
-                    <li><a href="/impressum">Impressum</a></li>
-                    <li><a href="/datenschutz">Datenschutz</a></li>
-                    <li><a href="/barrierefreiheit">Erklärung zur Barrierefreiheit</a></li>
-                </ul>
-            </nav>
-            <p>2026 Firmenname. Alle Rechte vorbehalten.</p>
+            <div class = "bg-gray-300 border-blue-500 dark:bg-zinc-950">
+                <p class="font-mono text-lg">Erfahre mehr über uns...</p>
+                <nav aria-label="Footer-Navigation">
+                    <ul class="flex justify-end">
+                        <li class="p-3"><a href="/impressum">Impressum</a></li>
+                        <li class="p-3"><a href="/datenschutz">Datenschutz</a></li>
+                        <li class="p-3"><a href="/datenschutz">Kontakt</a></li>
+                        <li class="p-3"><a href="/barrierefreiheit">Erklärung zur Barrierefreiheit</a></li>
+                    </ul>
+                </nav>
+                <p>2026 Firmenname. Alle Rechte vorbehalten.</p>
+            </div>
         </footer>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
 </html>
