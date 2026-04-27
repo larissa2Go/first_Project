@@ -1,2 +1,21 @@
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where(.dark, .dark *)); 
+
+:root{
+    --header: #D1D5DB;
+    --base-bg: #ffffff;
+    --accent: #EFF6FF;
+    
+}
+
+
+
+@theme {
+    
+    --color-header: var(--header);
+    --color-base-bg: var(--base-bg);
+    --color-hover-accent: var(--accent);
+
+}
+
+
