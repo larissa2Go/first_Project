@@ -2,9 +2,11 @@
 @custom-variant dark (&:where(.dark, .dark *)); 
 
 :root{
-    --header: #D1D5DB;
+    --headFoo: #D1D5DB;
     --base-bg: #ffffff;
     --accent: #EFF6FF;
+    --secondary: #F3F4F6;
+   
     
 }
 
@@ -12,9 +14,10 @@
 
 @theme {
     
-    --color-header: var(--header);
+    --color-headFoo: var(--headFoo);
     --color-base-bg: var(--base-bg);
     --color-hover-accent: var(--accent);
+    --color-secondary-bg: var(--secondary);
 
 }
 
