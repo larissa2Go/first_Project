@@ -1,4 +1,3 @@
-import './style.css'
 import javascriptLogo from './assets/javascript.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -14,6 +13,15 @@ btn.addEventListener('click', () => {
   } else {
     html.dataset.theme = 'dark'
   }
+})
+
+
+
+const sidebar = document.querySelector("#sidebar")
+const button = document.querySelector("#menu-toggle")
+
+button.addEventListener("click", () => {
+  sidebar.classList.toggle("hidden")
 })
 
 

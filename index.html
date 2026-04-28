@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="en" data-theme="light">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Projekt 1</title>
     </head>
     <body class="bg-base-bg text-text-main">
-        <header class="bg-headFoo flex items-center shadow-md sticky top-0 z-50">
+        <header class="bg-headFoo flex items-center justify-between shadow-md sticky top-0 z-50">
             <img class="w-20"src="logo.svg">
             <div class="bg-button-blue-primary px-4 py-2 rounded-md w-fit ml-auto mr-5">
                 <button class="w-10" id="theme-toggle">
                     <img src="sun.png">
                 </button>
             </div>
+            <button class="md:hidden p-1" id="menu-toggle"><img class="w-5"src="hamburgerIcon.png"></button>
         </header>
         
         <div class="flex min-h-screen">
             
-            
-            <aside class="w-64 bg-secondary-bg p-4 hidden md:block shadow-lg p-6 rounded-r-2xl ">
+            <aside id="sidebar" class="w-64 bg-secondary-bg p-4 hidden md:block shadow-lg p-6 rounded-r-2xl ">
                 <div class="p-6">
                     <h2 class="-mt-5 text-xl font-bold text-headings">Menü</h2>
                 </div>
