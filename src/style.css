@@ -2,11 +2,11 @@
 @custom-variant dark (&:where(.dark, .dark *)); 
 
 :root{
-    --headFoo: #D1D5DB;
-    --base-bg: #ffffff;
-    --accent: #EFF6FF;
-    --secondary: #F3F4F6;
-    --text-main: #000000;
+    --headFoo: oklch(0.8717 0.0093 258.34);
+    --base-bg: oklch(1 0 0);
+    --accent: oklch(0.967 0.0029 264.54);
+    --secondary: oklch(0.967 0.0029 264.54);
+    --text-main: oklch(0 0 0);
     --button-blue-primary: oklch(0.9319 0.0316 255.59);
     --headings: oklch(0.5461 0.2152 262.88);
     --hover-ring: oklch(0.8823 0.0571 254.13);
