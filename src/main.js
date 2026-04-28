@@ -6,9 +6,14 @@ import { setupCounter } from './counter.js'
 import './style.css'
 
 const btn = document.querySelector('#theme-toggle')
+const html = document.documentElement
 
 btn.addEventListener('click', () => {
-  document.documentElement.classList.toggle('dark')
+  if (html.dataset.theme === 'dark') {
+    html.dataset.theme = 'light'
+  } else {
+    html.dataset.theme = 'dark'
+  }
 })
 
 

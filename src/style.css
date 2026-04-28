@@ -6,8 +6,17 @@
     --base-bg: #ffffff;
     --accent: #EFF6FF;
     --secondary: #F3F4F6;
+    --text-main: #000000;
    
     
+}
+
+[data-theme="dark"] {
+    --base-bg: #09090b;
+    --headFoo: #18181b;
+    --secondary: #18181b;
+    --accent: #27272a;
+    --text-main: #ffffff;
 }
 
 
@@ -18,7 +27,9 @@
     --color-base-bg: var(--base-bg);
     --color-hover-accent: var(--accent);
     --color-secondary-bg: var(--secondary);
-
+    --color-text-main: var(--text-main);
 }
+
+
 
 
