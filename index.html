@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en" data-theme="light">
     <head>
+        <script type="module" src="/src/main.js"></script>
+        <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +10,13 @@
     </head>
     <body class="bg-base-bg text-text-main">
         <header class="bg-headFoo flex items-center justify-between shadow-md sticky top-0 z-50">
-            <img class="w-20"src="logo.svg">
+            <img class="w-20 h-20"src="logo.svg">
             <div class="bg-button-blue-primary px-4 py-2 rounded-md w-fit ml-auto mr-5">
-                <button class="w-10" id="theme-toggle">
+                <button class="w-10 h-10" id="theme-toggle">
                     <img src="sun.png">
                 </button>
             </div>
-            <button class="md:hidden p-1" id="menu-toggle"><img class="w-5"src="hamburgerIcon.png"></button>
+            <button class="md:hidden p-1" id="menu-toggle"><img class="w-5 h-5"src="hamburgerIcon.png"></button>
         </header>
         
         <div class="flex min-h-screen">
@@ -71,6 +73,5 @@
             </div>
         </footer>
         </div>
-        <script type="module" src="/src/main.js"></script>
     </body>
 </html>
