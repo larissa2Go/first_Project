@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *)); 
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant hc (&:where([data-theme="high-contrast"], [data-theme="high-contrast"] *));
 
 :root{
     --headFoo: oklch(0.8717 0.0093 258.34);
@@ -12,16 +13,28 @@
     --hover-ring: oklch(0.8823 0.0571 254.13);
     --hover-bg: oklch(0.795 0.188 259.81 / 9.01%)
     
+    
 }
 
 [data-theme="dark"] {
     --base-bg: oklch(0.1408 0.0044 285.82);
     --headFoo: oklch(0.2103 0.0059 285.89);
-    --secondary: oklch(0.2103 0.0059 285.89)
+    --secondary: oklch(0.2103 0.0059 285.89);
     --accent: oklch(0.2739 0.0055 286.03);
     --text-main: oklch(1 0 0);
 }
 
+[data-theme="high-contrast"]{
+    --base-bg: oklch(0.2103 0.0059 285.89);
+    --headFoo: oklch(0.20 0.08 301.12);
+    --secondary: oklch(0.2103 0.0059 285.89);
+    --accent: oklch(0.65 0.28 300.00);
+    --text-main: oklch(0.80 0.20 85.00);
+    --headings: oklch(0.86 0.22 92.00);
+    --button-primary: oklch(0.80 0.20 85.00);
+
+
+}
 
 
 @theme {

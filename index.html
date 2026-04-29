@@ -12,11 +12,14 @@
         <header class="bg-headFoo flex items-center justify-between shadow-md sticky top-0 z-50">
             <img class="w-20 h-20"src="logo.svg">
             <div class="bg-button-primary px-4 py-2 rounded-md w-fit ml-auto mr-5">
-                <button class="w-10 h-10" id="theme-toggle">
+                <button class="w-10 h-10 hover:cursor-pointer" id="theme-toggle">
                     <img src="sun.png">
                 </button>
             </div>
-            <button class="md:hidden p-1" id="menu-toggle"><img class="w-5 h-5"src="hamburgerIcon.png"></button>
+            <div class="">
+            <button class ="w-10 h-20 mr-10 hover:cursor-pointer" id="high-contrast-toggle">high contrast</button>
+            </div>
+            <button class="md:hidden p-1 hover:cursor-pointer" id="menu-toggle"><img class="w-5 h-5"src="hamburgerIcon.png"></button>
         </header>
         
         <div class="flex min-h-screen">
@@ -27,10 +30,10 @@
                 </div>
                 <nav aria-label="Hauptnavigation">
                     <ul class =" px-3">
-                        <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-hover-ring rounded-lg shadow hover:bg-hover-bg"><a href="#">Ausbilder</a></li>
-                        <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-hover-ring rounded-lg shadow hover:bg-hover-bg"><a href="#">Azubis</a></li>
-                        <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-hover-ring rounded-lg shadow hover:bg-hover-bg"><a href="#">Berichtsheft</a></li>
-                        <li class="flex items-center px-4 py-3 hover:ring-2 hover:ring-hover-ring rounded-lg shadow hover:bg-hover-bg"><a href="#">Einstellungen</a></li>
+                        <li class="flex items-center px-4 py-3 hover:cursor-pointer hover:ring-2 hover:ring-hover-ring rounded-lg shadow hover:bg-hover-bg"><a href="#">Ausbilder</a></li>
+                        <li class="flex items-center px-4 py-3 hover:cursor-pointer hover:ring-2 hover:ring-hover-ring rounded-lg shadow hover:bg-hover-bg"><a href="#">Azubis</a></li>
+                        <li class="flex items-center px-4 py-3 hover:cursor-pointer hover:ring-2 hover:ring-hover-ring rounded-lg shadow hover:bg-hover-bg"><a href="#">Berichtsheft</a></li>
+                        <li class="flex items-center px-4 py-3 hover:cursor-pointer hover:ring-2 hover:ring-hover-ring rounded-lg shadow hover:bg-hover-bg"><a href="#">Einstellungen</a></li>
                     </ul>
                 </nav>
             </aside>
@@ -40,15 +43,24 @@
                     Willkommen zurück 👋
                 </h1>
                 
-                <article class="">Diese Seite ist dafür gedacht, dass du alle Informationen auf einen Fleck hast. Auf dieser Seite könnt ihr vieles über eure Aubildung lernen sowie in Austausch mit euren Ausbilder treten und Ausbilder ebenfalls mit den Azubis. Berichtshefte können angelegt werden und vieles mehr. Klickt euch doch gerne durch.</article>
+                <article class="">Diese Seite ist dafür gedacht, dass du alle wichtigen Informationen an einem Ort findest. Hier kannst du alles rund um deine Ausbildung lernen, mit deinen Ausbildern in Kontakt treten und dich mit anderen Azubis austauschen. Außerdem kannst du Berichtshefte anlegen und viele weitere Funktionen nutzen. Schau dich gerne um!</article>
                 
-                <div class="grid grid-cols-2">
-                    <img class="ml-auto mt-4 w-120"src="ausbildung.jpg" alt="Lernende Azubis">
-                    <p class="mt-4 px-2">
+                <div class="flex">
+                  <div>
+                    <div id="skeleton" class="bg-secondary-bg w-120 h-100 opacity-100 animate-pulse"></div>
+
+                    <img
+                      id="learn-image"
+                      class="mt-4 w-120 opacity-0 transition-opacity ease-in-out"
+                      src="ausbildung.jpg"
+                      alt="Lernende Azubis">
+                  </div>
+
+                  <p class= "p-2 m-2">
                     Zusätzlich hast du die Möglichkeit, deine Fortschritte zu verfolgen
                     und jederzeit auf relevante Inhalte zuzugreifen.
                     Nutze die Plattform regelmäßig, um optimal durch deine Ausbildung zu kommen.
-                    </p>
+                  </p>
                 </div>
                 
                 
