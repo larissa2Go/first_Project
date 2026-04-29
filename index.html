@@ -43,11 +43,16 @@
                     Willkommen zurück 👋
                 </h1>
                 
-                <article class="">Diese Seite ist dafür gedacht, dass du alle wichtigen Informationen an einem Ort findest. Hier kannst du alles rund um deine Ausbildung lernen, mit deinen Ausbildern in Kontakt treten und dich mit anderen Azubis austauschen. Außerdem kannst du Berichtshefte anlegen und viele weitere Funktionen nutzen. Schau dich gerne um!</article>
+                <div>
+                    <div id= "textSkeleton"class="flex items-center justify-center bg-secondary-bg w-400 h-50 opacity-100 animate-pulse"></div>
+                    <article id="showText" class="hidden opacity-0 transition-opacity ease-in-out">Diese Seite ist dafür gedacht, dass du alle wichtigen Informationen an einem Ort findest. Hier kannst du alles rund um deine Ausbildung lernen, mit deinen Ausbildern in Kontakt treten und dich mit anderen Azubis austauschen. Außerdem kannst du Berichtshefte anlegen und viele weitere Funktionen nutzen. Schau dich gerne um!</article>
+                </div>
                 
                 <div class="flex">
                   <div>
-                    <div id="skeleton" class="bg-secondary-bg w-120 h-100 opacity-100 animate-pulse"></div>
+                      <div id="skeleton" class="flex items-center justify-center bg-secondary-bg w-120 h-100 opacity-100 animate-pulse">
+                          <img class="w-20" src="picLoads.svg">
+                      </div>
 
                     <img
                       id="learn-image"

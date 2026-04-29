@@ -49,5 +49,16 @@ if (image.complete) {
     image.classList.add('opacity-100')
   })
 }
+const textMain = document.querySelector('#showText')
+const skeletonText = document.querySelector('#textSkeleton')
+
+setTimeout(() => {
+  skeletonText.classList.add('hidden')
+  textMain.classList.remove('hidden')
+  textMain.classList.remove('opacity-0')
+  textMain.classList.add('opacity-100')
+}, 1000)
+
+
 
 
