@@ -15,11 +15,11 @@
 }
 
 [data-theme="dark"] {
-    --base-bg: #09090b;
-    --headFoo: #18181b;
-    --secondary: #18181b;
-    --accent: #27272a;
-    --text-main: #ffffff;
+    --base-bg: oklch(0.1408 0.0044 285.82);
+    --headFoo: oklch(0.2103 0.0059 285.89);
+    --secondary: oklch(0.2103 0.0059 285.89)
+    --accent: oklch(0.2739 0.0055 286.03);
+    --text-main: oklch(1 0 0);
 }
 
 
