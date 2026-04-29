@@ -7,7 +7,7 @@
     --accent: oklch(0.967 0.0029 264.54);
     --secondary: oklch(0.967 0.0029 264.54);
     --text-main: oklch(0 0 0);
-    --button-blue-primary: oklch(0.9319 0.0316 255.59);
+    --button-primary: oklch(0.9319 0.0316 255.59);
     --headings: oklch(0.5461 0.2152 262.88);
     --hover-ring: oklch(0.8823 0.0571 254.13);
     --hover-bg: oklch(0.795 0.188 259.81 / 9.01%)
@@ -31,7 +31,7 @@
     --color-hover-accent: var(--accent);
     --color-secondary-bg: var(--secondary);
     --color-text-main: var(--text-main);
-    --color-button-blue-primary: var(--button-blue-primary);
+    --color-button-primary: var(--button-primary);
     --color-headings: var(--headings);
     --color-hover-ring: var(--hover-ring);
     --color-hover-bg: var(--hover-bg);
